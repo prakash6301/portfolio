@@ -84,7 +84,7 @@ export default function SkillsSection() {
         </div>
 
         {/* Skills Listing */}
-        <div className="md:mt-6 lg:mt-6 mt-6  space-y-10">
+        <div className="mt-12 space-y-16">
           {skills.map((block, index) => (
             <motion.div
               key={index}
