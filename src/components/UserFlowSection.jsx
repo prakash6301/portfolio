@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import FlowChartSVG from "./FlowChartSvg";
+import FlowChartSVG from "./FlowChartSVG";
 
 const UserFlowSection = () => {
   return (
