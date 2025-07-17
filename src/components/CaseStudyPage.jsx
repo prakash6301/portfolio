@@ -1,6 +1,4 @@
 import React from "react";
-import RoomieFlowChart from "../assets/roomie_flowchart.svg"
-import FlowChartSVG from "./FlowChartSvg";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { motion } from "framer-motion";
