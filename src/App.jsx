@@ -7,6 +7,7 @@ function App() {
   useLenisScroll(); // Initialize Lenis
 
   return (
+    
   <AppRoutes />
 );
 }

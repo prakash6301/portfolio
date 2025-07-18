@@ -28,7 +28,7 @@ const Navbar = () => {
           : "bg-black"
       }`}
     >
-      <div className="mx-auto lg:px-12 px-8 py-4 flex items-center justify-between">
+      <div className="mx-auto lg:px-12 px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="text-white text-xl font-bold tracking-wider uppercase">
           sai prakash

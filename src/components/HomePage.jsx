@@ -16,12 +16,14 @@ export default function HomePage() {
         <Navbar />
         <HeroSection />
         <ProjectsSection />
-        <SkillsSection />
+         <SkillsSection />
         <ExperienceSection />
+       
         <EducationSection />
         <ContactSection />
         <Footer />
       </Layout>
+      
     </div>
   );
 }
