@@ -65,7 +65,7 @@ const ContactMeModal = ({ onClose }) => {
 
           {/* LinkedIn */}
           <a
-            href="https://linkedin.com/in/saiprakash6301"
+            href="https://linkedin.com/in/saiprakashk6301"
             target="_blank"
             rel="noopener noreferrer"
             className="w-10 h-10 flex items-center justify-center bg-blue-700 text-white rounded-md hover:bg-blue-800 transition"

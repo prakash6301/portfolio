@@ -50,7 +50,7 @@ export default function ContactSection() {
       label: "+91 9353077515",
     },
     {
-      href: "https://github.com/",
+      href: "https://github.com/prakash6301",
       icon: <Github size={20} />,
       label: "GitHub",
     },

@@ -63,7 +63,7 @@ const HeroSection = () => {
         <FaLinkedin />
       </a>
       <a
-        href="https://github.com/"
+        href="https://github.com/prakash6301"
         target="_blank"
         rel="noopener noreferrer"
         className="text-white hover:text-gray-300"
