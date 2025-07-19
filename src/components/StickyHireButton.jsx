@@ -27,7 +27,7 @@ const StickyHireMeButton = () => {
   return (
     <div
       onClick={() => setShowModal((prev) => !prev)}
-      className="fixed right-0 top-1/2 -translate-y-1/2 z-50 cursor-pointer"
+      className="fixed right-0 top-1/2 -translate-y-1/2 z-50 cursor-pointer will-change-transform"
     >
       <div
         className={`w-10 h-32 flex flex-col items-center justify-between shadow-lg cursor-pointer transition-all duration-300 p-2 hover:text-white ${
