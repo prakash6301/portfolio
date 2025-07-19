@@ -9,12 +9,15 @@ import ProblemSolutionSection from "./ProblemSolutionSection";
 import UserFlowSection from "./UserFlowSection";
 import ConclusionSection from "./ConclusionSection";
 import ContactSection from "./ContactSection";
+import StickyHireMeButton from "./StickyHireButton";
 
 
 
 export default function RoomieCaseStudyPage() {
   return (
 
+
+    <>
     <div className="px-2 sm:px-6 lg:px-8 w-full  mx-auto" >
      <Navbar/>
 
@@ -48,6 +51,9 @@ export default function RoomieCaseStudyPage() {
 
 
     </div>
+    <StickyHireMeButton/>
+    </>
+    
     
     
   );

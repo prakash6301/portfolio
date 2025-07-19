@@ -7,11 +7,16 @@ import ProjectsSection from "./ProjectSection.jsx";
 import SkillsSection from "./SkillsSection.jsx";
 import ExperienceSection from "./ExperienceSection.jsx";
 import EducationSection from "./EducationSection.jsx";
+import StickyHireMeButton from "./StickyHireButton.jsx";
 
 
 export default function HomePage() {
   return (
-    <div className="overflow-hidden" >
+
+
+    <>
+
+     <div className="overflow-hidden" >
       <Layout>
         <Navbar />
         <HeroSection />
@@ -25,5 +30,9 @@ export default function HomePage() {
       </Layout>
       
     </div>
+
+    <StickyHireMeButton/>
+    </>
+   
   );
 }
