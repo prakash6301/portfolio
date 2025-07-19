@@ -1,25 +1,24 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import ContactMeModal from './ContactMeModal';
 
 const StickyHireMeButton = () => {
   const [showModal, setShowModal] = useState(false);
   const [isScrolling, setIsScrolling] = useState(false);
-  let scrollTimeout = null;
+  const scrollTimeout = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolling(true);
-      clearTimeout(scrollTimeout);
+      if (scrollTimeout.current) clearTimeout(scrollTimeout.current);
 
-      // Reset to false after user stops scrolling for 200ms
-      scrollTimeout = setTimeout(() => {
+      scrollTimeout.current = setTimeout(() => {
         setIsScrolling(false);
       }, 200);
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => {
-      clearTimeout(scrollTimeout);
+      if (scrollTimeout.current) clearTimeout(scrollTimeout.current);
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
@@ -27,10 +26,10 @@ const StickyHireMeButton = () => {
   return (
     <div
       onClick={() => setShowModal((prev) => !prev)}
-      className="fixed right-0 top-1/2 -translate-y-1/2 z-50 cursor-pointer will-change-transform"
+      className="fixed right-0 md:top-[40vh] lg:top-[40vh] top-[40vh] z-50 cursor-pointer will-change-transform"
     >
       <div
-        className={`w-10 h-32 flex flex-col items-center justify-between shadow-lg cursor-pointer transition-all duration-300 p-2 hover:text-white ${
+        className={`w-10 h-32 flex flex-col items-center justify-between shadow-lg transition-all duration-300 p-2 hover:text-white ${
           isScrolling ? 'bg-orange-500 text-white hover:bg-orange-600' : 'bg-white text-black hover:bg-orange-500'
         }`}
       >
